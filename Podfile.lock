@@ -1,0 +1,20 @@
+PODS:
+  - ResearchKit (2.2.15)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - ResearchKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - ResearchKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ResearchKit: f7637bf5885a03ff3be86cf1ce3f92e34b914e82
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: cc2ef1824ccb8a388734f97721b046798c20b12c
+
+COCOAPODS: 1.14.3
