@@ -28,7 +28,6 @@ public var ConsentTask: ORKOrderedTask {
     reviewConsentStep.reasonForConsent = "Consent to join study"
 
     steps += [reviewConsentStep]
-
   
   return ORKOrderedTask(identifier: "ConsentTask", steps: steps)
 }

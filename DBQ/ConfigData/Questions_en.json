@@ -1,0 +1,188 @@
+{
+  "name": "DBQ",
+  "identifier": "symptomsquestionnaire",
+  "version": 1.0,
+  "locale": "en",
+  "title": "Symptoms Questionnaire",
+  "text": "We will show some questions with multiple options. Please answer carefully.",
+  "introduction": {
+    "title": "Symptoms Questionnaire",
+    "identifier": "introstep",
+    "text": "We will show some questions with multiple options. Please answer carefully."
+  },
+  "questions": [
+    {
+      "title": "1/35",
+      "identifier": "troublewrappingupdetails",
+      "text": "How often do you have trouble wrapping up details of a project, once the challenging parts have been done?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "2/35",
+      "identifier": "difficultygettingthings",
+      "text": "HOW often do you have difficulty getting things in order when you have to do a task that requires organization?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "3/35",
+      "identifier": "problemsremembering",
+      "text": "HOW often do you have problems remembering appointments or obligations? ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "4/35",
+      "identifier": "delaygetttingstarted",
+      "text": "When you have a task that requires a lot Of thought, how often do you avoid or delay getting started?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "5/35",
+      "identifier": "figdetorsquirm",
+      "text": "HOW often do you figdet or squirm With your hands or feet when you have to sit down for a long time? ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "6/35",
+      "identifier": "overlyactive",
+      "text": "How Often do you feel Overly active and compelled to do things, like you were driven by a motor?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "title": "Right. Off you go!",
+    "identifier": "summaryquestionnaire",
+    "text": "That was easy!"
+  }
+}
