@@ -29,6 +29,7 @@
 		41D92E712B3A6383001ADF8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41D92E702B3A6383001ADF8B /* GoogleService-Info.plist */; };
 		41D92E732B3A708B001ADF8B /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D92E722B3A708B001ADF8B /* SessionStore.swift */; };
 		41D92E752B3ADFFC001ADF8B /* SignUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D92E742B3ADFFC001ADF8B /* SignUPView.swift */; };
+		41D92E772B3AFA82001ADF8B /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D92E762B3AFA82001ADF8B /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		41D92E702B3A6383001ADF8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41D92E722B3A708B001ADF8B /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionStore.swift; path = "/Users/shishirmishra/Learnings/MyLearningStuff/swift-learnings/DBQ/DBQ/SessionStore.swift"; sourceTree = "<absolute>"; };
 		41D92E742B3ADFFC001ADF8B /* SignUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPView.swift; sourceTree = "<group>"; };
+		41D92E762B3AFA82001ADF8B /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		DEABB46311A9F82C9C167767 /* Pods-DBQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBQ.release.xcconfig"; path = "Target Support Files/Pods-DBQ/Pods-DBQ.release.xcconfig"; sourceTree = "<group>"; };
 		E7853E1CF01E8F49A24E5B84 /* Pods-DBQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBQ.debug.xcconfig"; path = "Target Support Files/Pods-DBQ/Pods-DBQ.debug.xcconfig"; sourceTree = "<group>"; };
 		E9877BA4B30ACE9448D74F9C /* Pods_DBQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				41039A9E2B34E4BC00671AD8 /* ContentView.swift */,
 				41D92E6A2B398A29001ADF8B /* LoginView.swift */,
 				41D92E742B3ADFFC001ADF8B /* SignUPView.swift */,
+				41D92E762B3AFA82001ADF8B /* ForgotPasswordView.swift */,
 				41039AA42B3800EE00671AD8 /* SurveyView.swift */,
 			);
 			path = Views;
@@ -435,6 +438,7 @@
 				41D92E752B3ADFFC001ADF8B /* SignUPView.swift in Sources */,
 				41039A9B2B345FA900671AD8 /* ConsentDocument.swift in Sources */,
 				41039A9F2B34E4BC00671AD8 /* ContentView.swift in Sources */,
+				41D92E772B3AFA82001ADF8B /* ForgotPasswordView.swift in Sources */,
 				41D92E6B2B398A29001ADF8B /* LoginView.swift in Sources */,
 				41D92E5E2B383111001ADF8B /* QuestionBuilder.swift in Sources */,
 				41D92E732B3A708B001ADF8B /* SessionStore.swift in Sources */,

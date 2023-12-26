@@ -9,6 +9,7 @@ struct LoginView: View {
     @State private var alertMessage = ""
     @State private var showSurveyView = false
     @State private var showSignUpView = false
+    @State private var showForgotPassword = false
     
     var body: some View {
         
@@ -17,6 +18,8 @@ struct LoginView: View {
                 SurveyView()
             } else if (showSignUpView) {
                 SignUPView()
+            }else if (showForgotPassword) {
+                ForgotPasswordView()
             }
             else {
                 TextField("Email", text: $email)
@@ -27,18 +30,28 @@ struct LoginView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                 
-                Button(action: signIn) {
-                    Text("Login")
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                }.padding()
-                
-                
-                Button("Signup"){
-                    self.showSignUpView = true
-                }.padding()
-               
+                HStack {
+                    Button(action: signIn) {
+                        Text("Login")
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                    }.padding()
+                    
+                    Group {
+                        Button("Sign Up"){
+                            self.showSurveyView = false
+                            self.showForgotPassword = false
+                            self.showSignUpView = true
+                        }.padding()
+                        
+                        Button("Forgot Password"){
+                            self.showSurveyView = false
+                            self.showSignUpView  = false
+                            self.showForgotPassword = true
+                        }.padding()
+                    }
+                }
             }
         }
         .padding()
@@ -46,8 +59,7 @@ struct LoginView: View {
             Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
         }
         .onAppear(perform: {
-//            sessionStore.signOut()
-       
+            //            sessionStore.signOut()
             self.showSurveyView = sessionStore.user != nil
         })
     }

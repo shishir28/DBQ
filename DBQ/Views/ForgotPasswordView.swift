@@ -8,10 +8,10 @@
 import SwiftUI
 import Firebase
 
-struct SignUPView: View {
+struct ForgotPasswordView: View {
     @EnvironmentObject var sessionStore: SessionStore
     @State private var email = ""
-    @State private var password = ""
+    
     @State private var showAlert = false
     @State private var alertMessage = ""
     @State private var showLoginView = false
@@ -24,14 +24,10 @@ struct SignUPView: View {
                 TextField("Email", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
-                
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
+                                
                 HStack {
-                    Button(action: signup) {
-                        Text("SignUp")
+                    Button(action: resetPassword) {
+                        Text("Reset Password")
                             .padding()
                             .background(Color.blue)
                             .foregroundColor(.white)
@@ -42,7 +38,7 @@ struct SignUPView: View {
                             .background(Color.blue)
                             .foregroundColor(.white)
                     }
-                }.padding()
+                }.padding()                
             }
         }
         .padding()
@@ -51,8 +47,8 @@ struct SignUPView: View {
         }
     }
     
-    func signup() {
-        sessionStore.signUp(email: email, password: password) { error in
+    func resetPassword() {
+        sessionStore.resetPassword(email: email) { error in
             if let error = error {
                 showAlert = true
                 alertMessage = error.localizedDescription
@@ -68,4 +64,3 @@ struct SignUPView: View {
         self.showLoginView = true
     }
 }
-
