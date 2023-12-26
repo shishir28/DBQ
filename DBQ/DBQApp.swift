@@ -6,13 +6,20 @@
 //
 
 import SwiftUI
+import Firebase 
 
 @main
 struct DBQApp: App {
+    var  sessionStore:SessionStore
+    init() {
+        // Initialize ResearchKit
+        FirebaseApp.configure()
+        sessionStore = SessionStore()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            SurveyView()
+            ContentView().environmentObject(sessionStore)
         }
     }
 }
-

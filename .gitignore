@@ -97,3 +97,9 @@ Pods/Target Support Files/Pods-DBQ/Pods-DBQ-frameworks-Release-output-files.xcfi
 Pods/Target Support Files/Pods-DBQ/Pods-DBQ-frameworks.sh
 Pods/Target Support Files/Pods-DBQ/Pods-DBQ.debug.xcconfig
 Pods/Target Support Files/Pods-DBQ/Pods-DBQ.release.xcconfig
+database-debug.log
+firebase-debug.log
+ui-debug.log
+
+DBQ.xcworkspace/contents.xcworkspacedata
+DBQ/GoogleService-Info.plist
