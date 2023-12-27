@@ -12,23 +12,37 @@ struct SurveyView: View {
     @State private var results: [ORKStepResult] = []
     @State private var isPresentingSurvey = false
     var body: some View {
-        Button("Start Survey") {
-            isPresentingSurvey.toggle()
-        }
-        .sheet(isPresented: $isPresentingSurvey, onDismiss: processSurveyResults) {
-            SurveyKitView(isPresented: $isPresentingSurvey, results: $results)
-        }
-    }
-    
-    func processSurveyResults() {
-        // Process the results obtained from the questionnaire
-        for result in results {
-            if let questionResult = result.results?.first as? ORKQuestionResult,
-               let answer = questionResult.answer {
-                print("Question: \(questionResult.identifier), Answer: \(answer)")
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.white]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+            if (isPresentingSurvey) {
+                SurveyKitView(isPresented: $isPresentingSurvey, results: $results).onDisappear(perform: {
+                    for result in results {
+                        if let questionResult = result.results?.first as? ORKQuestionResult,
+                           let answer = questionResult.answer {
+                            print("Question: \(questionResult.identifier), Answer: \(answer)")
+                        }
+                    }
+                })
+            }else {
+                VStack {
+                    Button(action: startSurvey) {
+                        Text("Start Survey")
+                            .foregroundColor(.white)
+                            .padding(.vertical, 12)
+                            .padding(.horizontal, 24)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                        .shadow(radius: 5)}
+                }
             }
         }
     }
+    
+    func startSurvey() {
+        isPresentingSurvey.toggle()
+    }
+    
 }
 
 struct SurveyKitView: UIViewControllerRepresentable {
@@ -67,6 +81,7 @@ struct SurveyKitView: UIViewControllerRepresentable {
             if let taskResult = taskViewController.result as? ORKTaskResult {
                 let results = taskResult.results as? [ORKStepResult] ?? []
                 parent.results = results
+                print(results)
             }
             parent.isPresented = false
         }

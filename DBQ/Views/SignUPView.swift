@@ -17,34 +17,43 @@ struct SignUPView: View {
     @State private var showLoginView = false
     
     var body: some View {
-        VStack {
-            if (showLoginView) {
-                LoginView()
-            }else {
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                HStack {
-                    Button(action: signup) {
-                        Text("SignUp")
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                    }
-                    Button(action: backToLogin) {
-                        Text("Back to Login")
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                    }
-                }.padding()
-            }
-        }
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.white]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                if (showLoginView) {
+                    LoginView()
+                }else {
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+                    
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+                    
+                    HStack {
+                        Button(action: signup) {
+                            Text("SignUp")
+                                .foregroundColor(.white)
+                                .padding(.vertical, 12)
+                                .padding(.horizontal, 24)
+                                .background(Color.blue)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                        }
+                        Button(action: backToLogin) {
+                            Text("Back to Login")
+                                .foregroundColor(.white)
+                                .padding(.vertical, 12)
+                                .padding(.horizontal, 24)
+                                .background(Color.blue)
+                                .cornerRadius(10)
+                                .shadow(radius: 5)
+                        }
+                    }.padding()
+                }
+            }}
         .padding()
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))

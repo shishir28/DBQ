@@ -12,45 +12,52 @@ struct LoginView: View {
     @State private var showForgotPassword = false
     
     var body: some View {
-        
-        VStack {
-            if (showSurveyView) {
-                SurveyView()
-            } else if (showSignUpView) {
-                SignUPView()
-            }else if (showForgotPassword) {
-                ForgotPasswordView()
-            }
-            else {
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.white]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
                 
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                HStack {
-                    Button(action: signIn) {
-                        Text("Login")
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                    }.padding()
+                if (showSurveyView) {
+                    SurveyView()
+                } else if (showSignUpView) {
+                    SignUPView()
+                }else if (showForgotPassword) {
+                    ForgotPasswordView()
+                }
+                else {
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
                     
                     Group {
-                        Button("Sign Up"){
-                            self.showSurveyView = false
-                            self.showForgotPassword = false
-                            self.showSignUpView = true
-                        }.padding()
-                        
-                        Button("Forgot Password"){
-                            self.showSurveyView = false
-                            self.showSignUpView  = false
-                            self.showForgotPassword = true
-                        }.padding()
-                    }
+                        HStack {
+                            Button("Sign Up"){
+                                self.showSurveyView = false
+                                self.showForgotPassword = false
+                                self.showSignUpView = true
+                            }.padding()
+                            
+                            Button("Forgot Password"){
+                                self.showSurveyView = false
+                                self.showSignUpView  = false
+                                self.showForgotPassword = true
+                            }.padding()
+                        }
+                    }.frame(maxWidth: .infinity, alignment: .trailing)
+                    
+                    Button(action: signIn) {
+                        Text("Login")
+                            .foregroundColor(.white)
+                            .padding(.vertical, 12)
+                            .padding(.horizontal, 24)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                    }.padding()
                 }
             }
         }

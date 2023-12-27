@@ -3,6 +3,7 @@ import Firebase
 
 class SessionStore: ObservableObject {
     @Published var user: User?
+    // To do : Should have session Id 
     
     private var authListenerHandle: AuthStateDidChangeListenerHandle?
     
