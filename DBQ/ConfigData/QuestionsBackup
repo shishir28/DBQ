@@ -1,0 +1,905 @@
+
+{
+  "name": "DBQ",
+  "identifier": "symptomsquestionnaire",
+  "version": 1.0,
+  "locale": "en",
+  "title": "Symptoms Questionnaire",
+  "text": "We will show some questions with multiple options. Please answer carefully.",
+  "introduction": {
+    "title": "Symptoms Questionnaire",
+    "identifier": "introstep",
+    "text": "We will show some questions with multiple options. Please answer carefully."
+  },
+  "questions": [
+    {
+      "title": "1/35",
+      "identifier": "troublewrappingupdetails",
+      "text": "How often do you have trouble wrapping up details of a project, once the challenging parts have been done?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "2/35",
+      "identifier": "difficultygettingthings",
+      "text": "HOW often do you have difficulty getting things in order when you have to do a task that requires organization?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "3/35",
+      "identifier": "problemsremembering",
+      "text": "HOW often do you have problems remembering appointments or obligations?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "4/35",
+      "identifier": "delaygetttingstarted",
+      "text": "When you have a task that requires a lot Of thought, how often do you avoid or delay getting started?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "5/35",
+      "identifier": "figdetorsquirm",
+      "text": "HOW often do you figdet or squirm With your hands or feet when you have to sit down for a long time?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "6/35",
+      "identifier": "overlyactive",
+      "text": "How Often do you feel Overly active and compelled to do things, like you were driven by a motor?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "7/35",
+      "identifier": "carelessmistakes",
+      "text": "HOW often do you make careless mistakes when you have to work on a boring or difficulty project?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "8/35",
+      "identifier": "diffcultykeepingn",
+      "text": "How often do you have diffculty keeping your attention when you are doing boring or repetitive work?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "9/35",
+      "identifier": "diffcultyoncentrating",
+      "text": "How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "10/35",
+      "identifier": "misplaceordifficulty",
+      "text": "How Often do you misplace Or have difficulty finding things at home or at work? ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "11/35",
+      "identifier": "distractedbyactivity",
+      "text": "HOW Often are you distracted by activity or noise around you?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "12/35",
+      "identifier": "leaveseatinmeeting",
+      "text": "HOW often do you leave your seat in meetings Of other situations in which you are expected to remain seated?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "13/35",
+      "identifier": "restlessfidgety",
+      "text": "How often do you feel restless or fidgety?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "14/35",
+      "identifier": "difficultyunwinding",
+      "text": "How Often do you have difficulty unwinding and relaxing when you have time to yourself?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "15/35",
+      "identifier": "talkingtoomuch",
+      "text": "How Often do you find yourself talking too much when you are in social situations?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "16/35",
+      "identifier": "finishingsentences",
+      "text": "When you're in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "17/35",
+      "identifier": "difficultywaitingyourturn",
+      "text": "How often do you have difficulty waiting your turn in situations When turn taking is required? ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Never",
+          "value": 0
+        },
+        {
+          "text": "Rarely",
+          "value": 1
+        },
+        {
+          "text": "Sometimes",
+          "value": 2
+        },
+        {
+          "text": "Often",
+          "value": 3
+        },
+        {
+          "text": "Very Often",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "title": "19/35",
+      "identifier": "feelingnervous",
+      "text": "Feeling nervous, anxious or on edge",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "20/35",
+      "identifier": "abletostoporcontrol",
+      "text": "Not being able to stop or control worrying",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "21/35",
+      "identifier": "worryingtoomuch",
+      "text": "Worrying too much about different things",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "22/35",
+      "identifier": "troublerelaxing",
+      "text": "Trouble relaxing",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "23/35",
+      "identifier": "interruptothers",
+      "text": "How often do you interrupt others when they are busy? ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "24/35",
+      "identifier": "easilyaanoyedorirritable",
+      "text": "Becoming easily annoyed or irritable",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "25/35",
+      "identifier": "feelingafraid",
+      "text": "Feeling afraid as if something awful might happen",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "26/35",
+      "identifier": "littleinterestorpleasure",
+      "text": "Little interest or pleasure in doing things",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "27/35",
+      "identifier": "feelingdowndepressed",
+      "text": "Feeling down, depressed, or hopeless",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "28/35",
+      "identifier": "fallingorstayingasleep",
+      "text": "Trouble falling or staying asleep, or sleeping too much",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "29/35",
+      "identifier": "feeilingtired",
+      "text": "Feeling tired or having little energy ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "30/35",
+      "identifier": "poorappetite",
+      "text": "Poor appetite or overeating ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "31/35",
+      "identifier": "feelingbadaboutyourself",
+      "text": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down ",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "32/35",
+      "identifier": "troubleconcentrating",
+      "text": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "33/35",
+      "identifier": "movingorspeakingsoslowly",
+      "text": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "34/35",
+      "identifier": "thoughtsbetteroffdead",
+      "text": "Thoughts that you would be better Off dead or Of hurting yourself in some way",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Several days",
+          "value": 1
+        },
+        {
+          "text": "More than half the days",
+          "value": 2
+        },
+        {
+          "text": "Nearly every day",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "title": "35/35",
+      "identifier": "difficultydoingworkhomeorgettingalongwithothers",
+      "text": "If you checked Off any problems, how difficult have these problems made it for you to do your work, take care of things at home. or get along with other people?",
+      "type": "sc",
+      "choices": [
+        {
+          "text": "Not difficult at all ",
+          "value": 0
+        },
+        {
+          "text": "Somewhat difficult",
+          "value": 1
+        },
+        {
+          "text": "Very difficult ",
+          "value": 2
+        },
+        {
+          "text": "Extremely difficult",
+          "value": 3
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "title": "Right. Off you go!",
+    "identifier": "summaryquestionnaire",
+    "text": "That was easy!"
+  }
+}

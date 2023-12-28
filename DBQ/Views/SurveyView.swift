@@ -11,19 +11,14 @@ import ResearchKit
 struct SurveyView: View {
     @State private var results: [ORKStepResult] = []
     @State private var isPresentingSurvey = false
+    @EnvironmentObject var sessionStore: SessionStore
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [Color.blue, Color.white]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             if (isPresentingSurvey) {
-                SurveyKitView(isPresented: $isPresentingSurvey, results: $results).onDisappear(perform: {
-                    for result in results {
-                        if let questionResult = result.results?.first as? ORKQuestionResult,
-                           let answer = questionResult.answer {
-                            print("Question: \(questionResult.identifier), Answer: \(answer)")
-                        }
-                    }
-                })
+                SurveyKitView(isPresented: $isPresentingSurvey, results: $results).onDisappear(perform: processSurveyResults)
             }else {
                 VStack {
                     Button(action: startSurvey) {
@@ -42,8 +37,21 @@ struct SurveyView: View {
     func startSurvey() {
         isPresentingSurvey.toggle()
     }
-    
+    func processSurveyResults() {
+        // Process the results obtained from the questionnaire
+        var questionnaireResult = QuestionnaireResult()
+        questionnaireResult.sessionId = sessionStore.sessionId
+        
+        for result in results {
+            if let questionResult = result.results?.first as? ORKQuestionResult,
+               let answer = questionResult.answer {
+                questionnaireResult.setValue(answer.description, forKey:String(questionResult.identifier))
+            }
+        }
+        sessionStore.saveQuestionnaireResult(questionnaireResult)
+    }
 }
+    
 
 struct SurveyKitView: UIViewControllerRepresentable {
     @Binding var isPresented: Bool

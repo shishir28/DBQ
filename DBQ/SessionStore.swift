@@ -1,14 +1,19 @@
 import SwiftUI
 import Firebase
+import SwiftyJSON
 
 class SessionStore: ObservableObject {
     @Published var user: User?
-    // To do : Should have session Id 
+    @Published var sessionId: String = ""
+    // To do : Should have session Id
+ 
     
     private var authListenerHandle: AuthStateDidChangeListenerHandle?
     
     init() {
         listenForAuthChanges()
+        let newUUID = UUID()
+        sessionId = newUUID.uuidString
     }
     
     func listenForAuthChanges() {
@@ -46,6 +51,32 @@ class SessionStore: ObservableObject {
         } catch let signOutError as NSError {
             print("Error signing out: \(signOutError.localizedDescription)")
         }
+    }
+    
+    func saveQuestionnaireResult (_ questionnaireResult: QuestionnaireResult){
+        
+        do {
+           
+            let jsonEncoder = JSONEncoder()
+            let jsonData = try jsonEncoder.encode(questionnaireResult)
+            
+           
+            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                print(jsonString)
+//                db.collection("questionnaireResults").document(sessionId).setData([
+//                    "data": jsonString
+//                ]) { error in
+//                    if let error = error {
+//                        print("Error storing data: \(error.localizedDescription)")
+//                    } else {
+//                        print("Data stored successfully!")
+//                    }
+//                }
+            }
+        } catch {
+            print("Error encoding object: \(error.localizedDescription)")
+        }
+        
     }
     
     deinit {

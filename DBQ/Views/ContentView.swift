@@ -17,7 +17,7 @@ struct ContentView: View {
             if (showLoginView) {
                 LoginView().environmentObject(sessionStore)
             } else {
-                SurveyView()
+                SurveyView().environmentObject(sessionStore)
             }
         }.onAppear(perform: {
             self.showLoginView = sessionStore.user == nil

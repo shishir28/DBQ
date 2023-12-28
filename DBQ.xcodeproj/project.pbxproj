@@ -21,6 +21,7 @@
 		4187FA232B330140003C2701 /* DBQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187FA222B330140003C2701 /* DBQUITests.swift */; };
 		4187FA252B330140003C2701 /* DBQUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187FA242B330140003C2701 /* DBQUITestsLaunchTests.swift */; };
 		4187FA332B330A08003C2701 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4187FA322B330A07003C2701 /* CoreBluetooth.framework */; };
+		41A33D602B3D881B00715028 /* QuestionnaireResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A33D5F2B3D881B00715028 /* QuestionnaireResult.swift */; };
 		41D92E5B2B3815DC001ADF8B /* Questions_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 41D92E5A2B3815DC001ADF8B /* Questions_en.json */; };
 		41D92E5E2B383111001ADF8B /* QuestionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D92E5D2B383111001ADF8B /* QuestionBuilder.swift */; };
 		41D92E672B3989B1001ADF8B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 41D92E662B3989B1001ADF8B /* FirebaseAuth */; };
@@ -83,6 +84,7 @@
 		4187FA242B330140003C2701 /* DBQUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBQUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4187FA312B330955003C2701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4187FA322B330A07003C2701 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		41A33D5F2B3D881B00715028 /* QuestionnaireResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireResult.swift; sourceTree = "<group>"; };
 		41D92E5A2B3815DC001ADF8B /* Questions_en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions_en.json; sourceTree = "<group>"; };
 		41D92E5D2B383111001ADF8B /* QuestionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBuilder.swift; sourceTree = "<group>"; };
 		41D92E6A2B398A29001ADF8B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		41039A992B345F9100671AD8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				41A33D5F2B3D881B00715028 /* QuestionnaireResult.swift */,
 				41D92E5C2B3830D0001ADF8B /* Helpers */,
 				41039A9C2B34D31A00671AD8 /* ConsentTask.swift */,
 				41039A9A2B345FA900671AD8 /* ConsentDocument.swift */,
@@ -433,6 +436,7 @@
 			files = (
 				41039AA52B3800EE00671AD8 /* SurveyView.swift in Sources */,
 				4187FA082B33013E003C2701 /* DBQApp.swift in Sources */,
+				41A33D602B3D881B00715028 /* QuestionnaireResult.swift in Sources */,
 				41039A9D2B34D31A00671AD8 /* ConsentTask.swift in Sources */,
 				41039AA22B37FBB600671AD8 /* SurveyBuilder.swift in Sources */,
 				41D92E752B3ADFFC001ADF8B /* SignUPView.swift in Sources */,
