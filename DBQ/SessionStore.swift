@@ -1,12 +1,14 @@
-import SwiftUI
 import Firebase
+import SwiftUI
 import SwiftyJSON
+import FirebaseCore
+import FirebaseFirestore
 
 class SessionStore: ObservableObject {
     @Published var user: User?
     @Published var sessionId: String = ""
-    // To do : Should have session Id
- 
+
+    let db = Firestore.firestore()
     
     private var authListenerHandle: AuthStateDidChangeListenerHandle?
     
@@ -56,22 +58,16 @@ class SessionStore: ObservableObject {
     func saveQuestionnaireResult (_ questionnaireResult: QuestionnaireResult){
         
         do {
-           
+            
             let jsonEncoder = JSONEncoder()
             let jsonData = try jsonEncoder.encode(questionnaireResult)
             
-           
             if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print(jsonString)
-//                db.collection("questionnaireResults").document(sessionId).setData([
-//                    "data": jsonString
-//                ]) { error in
-//                    if let error = error {
-//                        print("Error storing data: \(error.localizedDescription)")
-//                    } else {
-//                        print("Data stored successfully!")
-//                    }
-//                }
+                do  {
+                    let ref = try  db.collection("QuestionnaireResults").addDocument(data: [sessionId:jsonString])
+                } catch {
+                    print("Error adding document: \(error.localizedDescription)")
+                }
             }
         } catch {
             print("Error encoding object: \(error.localizedDescription)")

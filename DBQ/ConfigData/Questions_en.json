@@ -12,7 +12,7 @@
   },
   "questions": [
     {
-      "title": "1/4",
+      "title": "1/2",
       "identifier": "troublewrappingupdetails",
       "text": "How often do you have trouble wrapping up details of a project, once the challenging parts have been done?",
       "type": "sc",
@@ -40,64 +40,7 @@
       ]
     },
     {
-      "title": "2/4",
-      "identifier": "difficultygettingthings",
-      "text": "HOW often do you have difficulty getting things in order when you have to do a task that requires organization?",
-      "type": "sc",
-      "choices": [
-        {
-          "text": "Never",
-          "value": 0
-        },
-        {
-          "text": "Rarely",
-          "value": 1
-        },
-        {
-          "text": "Sometimes",
-          "value": 2
-        },
-        {
-          "text": "Often",
-          "value": 3
-        },
-        {
-          "text": "Very Often",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "title": "3/4",
-      "identifier": "problemsremembering",
-      "text": "HOW often do you have problems remembering appointments or obligations?",
-      "type": "sc",
-      "choices": [
-        {
-          "text": "Never",
-          "value": 0
-        },
-        {
-          "text": "Rarely",
-          "value": 1
-        },
-        {
-          "text": "Sometimes",
-          "value": 2
-        },
-        {
-          "text": "Often",
-          "value": 3
-        },
-        {
-          "text": "Very Often",
-          "value": 4
-        }
-      ]
-    },
-    
-    {
-      "title": "4/4",
+      "title": "2/2",
       "identifier": "difficultydoingworkhomeorgettingalongwithothers",
       "text": "If you checked Off any problems, how difficult have these problems made it for you to do your work, take care of things at home. or get along with other people?",
       "type": "sc",
