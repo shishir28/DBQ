@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		41039A962B344D0C00671AD8 /* Pods_DBQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41039A952B344D0C00671AD8 /* Pods_DBQ.framework */; };
 		41039A972B344D0C00671AD8 /* Pods_DBQ.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41039A952B344D0C00671AD8 /* Pods_DBQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		41039A9B2B345FA900671AD8 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41039A9A2B345FA900671AD8 /* ConsentDocument.swift */; };
-		41039A9D2B34D31A00671AD8 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41039A9C2B34D31A00671AD8 /* ConsentTask.swift */; };
 		41039A9F2B34E4BC00671AD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41039A9E2B34E4BC00671AD8 /* ContentView.swift */; };
 		41039AA22B37FBB600671AD8 /* SurveyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41039AA12B37FBB600671AD8 /* SurveyBuilder.swift */; };
 		41039AA52B3800EE00671AD8 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41039AA42B3800EE00671AD8 /* SurveyView.swift */; };
@@ -72,8 +70,6 @@
 		41039A8E2B34497400671AD8 /* DBQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DBQ.entitlements; sourceTree = "<group>"; };
 		41039A8F2B344C7F00671AD8 /* ResearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41039A952B344D0C00671AD8 /* Pods_DBQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_DBQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41039A9A2B345FA900671AD8 /* ConsentDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
-		41039A9C2B34D31A00671AD8 /* ConsentTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		41039A9E2B34E4BC00671AD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41039AA12B37FBB600671AD8 /* SurveyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyBuilder.swift; sourceTree = "<group>"; };
 		41039AA42B3800EE00671AD8 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
@@ -148,8 +144,6 @@
 			children = (
 				41A33D5F2B3D881B00715028 /* QuestionnaireResult.swift */,
 				41D92E5C2B3830D0001ADF8B /* Helpers */,
-				41039A9C2B34D31A00671AD8 /* ConsentTask.swift */,
-				41039A9A2B345FA900671AD8 /* ConsentDocument.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -449,10 +443,8 @@
 				41039AA52B3800EE00671AD8 /* SurveyView.swift in Sources */,
 				4187FA082B33013E003C2701 /* DBQApp.swift in Sources */,
 				41A33D602B3D881B00715028 /* QuestionnaireResult.swift in Sources */,
-				41039A9D2B34D31A00671AD8 /* ConsentTask.swift in Sources */,
 				41039AA22B37FBB600671AD8 /* SurveyBuilder.swift in Sources */,
 				41D92E752B3ADFFC001ADF8B /* SignUPView.swift in Sources */,
-				41039A9B2B345FA900671AD8 /* ConsentDocument.swift in Sources */,
 				41039A9F2B34E4BC00671AD8 /* ContentView.swift in Sources */,
 				41D92E772B3AFA82001ADF8B /* ForgotPasswordView.swift in Sources */,
 				41D92E6B2B398A29001ADF8B /* LoginView.swift in Sources */,
